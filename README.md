@@ -29,3 +29,59 @@ Privacy information can be found at https://privacy.microsoft.com/en-us/
 
 Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
+
+# 🍕 Blazing Pizza
+
+A full-stack pizza ordering application built with **ASP.NET Blazor**, demonstrating modern web development with C# and .NET.
+
+## Overview
+
+Blazing Pizza is an interactive web application where users can browse a menu of specialty pizzas, customize orders, and manage their cart — all powered by Blazor's component-based architecture.
+
+## Tech Stack
+
+- **Framework:** ASP.NET Blazor Server
+- **Language:** C#
+- **Database:** SQLite with Entity Framework Core
+- **Frontend:** Razor Components, CSS
+- **Architecture:** Component-based with dependency injection
+
+## Features
+
+- Browse and select from specialty pizzas
+- Customize pizza orders with toppings and sizes
+- Real-time order state management
+- Persistent data storage with Entity Framework Core
+- RESTful API controllers for order and menu management
+
+## Project Structure
+├── Model/              # Data models (Pizza, Order, Topping)
+├── Pages/              # Blazor page components
+├── Shared/             # Shared layout components
+├── wwwroot/            # Static assets (CSS, images)
+├── OrderController.cs  # Order API endpoint
+├── SpecialsController.cs # Menu specials endpoint
+├── PizzaStoreContext.cs  # EF Core database context
+├── OrderState.cs       # Application state management
+└── SeedData.cs         # Initial database seeding
+
+## Getting Started
+
+### Prerequisites
+- [.NET SDK 6.0+](https://dotnet.microsoft.com/download)
+
+### Run Locally
+```bash
+git clone https://github.com/luansud/BlazingPizza.git
+cd BlazingPizza
+dotnet run
+```
+Navigate to `https://localhost:5001` in your browser.
+
+## Learning Context
+
+This project was developed as part of the [Microsoft Learn Blazor tutorial](https://learn.microsoft.com/en-us/training/modules/build-blazor-webassembly-visual-studio-code/), extended with additional features and customizations.
+
+## License
+
+This project is licensed under MIT and CC-BY-4.0 licenses. See [LICENSE](LICENSE) and [LICENSE-CODE](LICENSE-CODE) for details.
